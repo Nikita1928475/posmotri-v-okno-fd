@@ -73,6 +73,7 @@ video {
 .result__video-container {
   position: relative;
   inline-size: 711px;
+  height: 400px; 
   margin: 0 0 11px;
 }
 
@@ -225,20 +226,13 @@ video {
   color: #545050;
 }
 
-/* scrollbar-width removes scrollbar, but only works in Firefox */
-/* https://caniuse.com/?search=scrollbar-width */
 .content__list {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto; 
   block-size: 298px;
-  scrollbar-width: none;
 }
 
-/* Removes scrollbar for most other browsers */
-/* https://caniuse.com/?search=webkit-scrollbar */
-.content__list::-webkit-scrollbar {
-  display: none;
-}
+
 
 .content__list-item:not(:last-child) {
   margin: 0 0 34px;
@@ -284,6 +278,10 @@ video {
   line-height: 1;
   text-transform: uppercase;
   hyphens: auto;
+  max-width: 192px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -291,6 +289,11 @@ video {
   color: #FFF;
   font-weight: 400;
   line-height: 16.2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
