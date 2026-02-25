@@ -73,7 +73,7 @@ video {
 .result__video-container {
   position: relative;
   inline-size: 711px;
-  height: 400px; 
+  height: 400px;
   margin: 0 0 11px;
 }
 
@@ -228,7 +228,7 @@ video {
 
 .content__list {
   position: relative;
-  overflow-y: auto; 
+  overflow-y: auto;
   block-size: 298px;
 }
 
