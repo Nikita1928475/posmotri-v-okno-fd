@@ -185,6 +185,7 @@ video {
   background-color: transparent;
   cursor: pointer;
   inline-size: 100%;
+  margin-top: 30px
 }
 
 .button:active {
@@ -226,10 +227,13 @@ video {
   color: #545050;
 }
 
-.content__list {
+.content__list-container {
   position: relative;
   overflow-y: auto;
   block-size: 298px;
+}
+
+.content__list {
 }
 
 .content__list-item:not(:last-child) {
